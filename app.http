@@ -1,0 +1,41 @@
+GET  http://localhost:4444/auth/
+
+###
+
+POST http://localhost:4444/auth/signup
+Content-Type: application/json 
+
+{
+    "name":"Ajay Kumar",
+    "email":"ajayreddy@gmail.com",
+    "phoneNumber":"9676091723",
+    "gender":"Male",
+    "password":"Reddy123"
+}
+
+###
+POST http://localhost:4444/auth/login
+Content-Type: application/json
+
+{
+    "email":"ajay123@gmail.com",
+    "password":"Ajay@123"
+}
+
+###
+GET http://localhost:4444/auth/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MGJjZmMyY2MwNjRmZjFmNTkxZWYxNyIsImlhdCI6MTY5NTI3NTA2MSwiZXhwIjoxNjk1Mjc4NjYxfQ.bCAoVlXMU9v1VdTNViSBIEhbvTm_J-5WaJJJyBVJUmI
+
+
+
+###
+GET http://localhost:4444/api/jobs
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MGJjZmMyY2MwNjRmZjFmNTkxZWYxNyIsImlhdCI6MTY5NTI3NTA2MSwiZXhwIjoxNjk1Mjc4NjYxfQ.bCAoVlXMU9v1VdTNViSBIEhbvTm_J-5WaJJJyBVJUmI
+
+###
+GET http://localhost:4444/api/jobs/650be0877c9fe4524a9a457a
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MDU0Y2M1ZGNlMDZhNWI0MDQzNmU5NiIsImlhdCI6MTY5NTM2MzI5OCwiZXhwIjoxNjk1MzY2ODk4fQ.DLTyjoGXveT2JGMNy07Y2b5ueyCAXPpFnxA8a8VRqeE
+
+###
+GET http://localhost:4444/api/filterjobs?employement_type=&minimum_package=&search=
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MDU0Y2M1ZGNlMDZhNWI0MDQzNmU5NiIsImlhdCI6MTY5NTM2NzEwOSwiZXhwIjoxNjk1MzcwNzA5fQ.NFCNbB3nwhgr5v7vSlxWNvhI8q_kxsKW1izcrHRfJOQ
